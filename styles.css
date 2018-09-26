@@ -1,0 +1,11 @@
+body{
+    background-image: url("forrest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image{
+    padding: 0 39.5% 0 39.5%
+}
+.images{
+    padding: 10% 22% 5% 22% 
+}
