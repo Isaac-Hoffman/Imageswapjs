@@ -1,4 +1,4 @@
-document.getElementById("img2").addEventListener("click", function(){
-    //alert("click");
-    document.getElementById("image").innerHTML = document.getElementById("img2").innerHTML
-})
+imageSelect = ["tree1.jpg", "tree2.jpg", "tree3.jpg"]
+function changeImage(id){
+    document.getElementById("imageBig").src = imageSelect[id]
+}
