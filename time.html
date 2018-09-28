@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="button" id="stopClock" value="stop clock">
+        <input type="button" id="startClock" value="start clock">
+        <div id="clock">
+        <div>
+        <script>
+            myTimer = setInterval(myFunction, 3000);
+            function myFunction(){
+                var randNum;
+                randNum = Math.ceil(Math.random() * 5);
+                //alert(randNum)
+                document.getElementById("clock").innerHTML = "The random number is " + randNum;
+            }
+            document.getElementById("stopClock").addEventListener("click", function(){
+                //alert("click");
+                clearInterval(myTimer);
+                document.getElementById("clock").innerHTML = "Clock stopped"
+            })
+            document.getElementById("startClock").addEventListener("click", function(){
+                //alert("click");
+                setInterval(myTimer);
+                document.getElementById("clock").innerHTML = "Clock started"
+            })
+        </script>
+    </body>
+</html>
